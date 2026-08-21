@@ -5,7 +5,7 @@ menuButton.addEventListener("click", () => {
   const isOpen = menuButton.classList.toggle("active");
   navigation.classList.toggle("open", isOpen);
   menuButton.setAttribute("aria-expanded", String(isOpen));
-  menuButton.setAttribute("aria-label", isOpen ? "Đóng menu" : "Mở menu");
+  menuButton.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
 });
 
 document.querySelectorAll(".site-nav a").forEach((link) => {

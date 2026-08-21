@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" role="img" aria-labelledby="title">
+  <title id="title">Hackathon award photo placeholder</title><rect width="600" height="500" fill="#f3ab72"/><path d="M205 70h190v88c0 80-38 132-95 132s-95-52-95-132z" fill="#c9ff56" stroke="#1d1d26" stroke-width="12"/><path d="M205 104h-70c0 87 37 126 102 126M395 104h70c0 87-37 126-102 126M300 290v68M238 398h124M260 358h80" fill="none" stroke="#1d1d26" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><path d="M300 113l17 35 39 6-28 27 7 39-35-19-35 19 7-39-28-27 39-6z" fill="#7448f5"/>
+  <text x="32" y="462" fill="#1d1d26" font-family="monospace" font-size="16" letter-spacing="4">AWARD MOMENT · PLACEHOLDER</text>
+</svg>

@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" role="img" aria-labelledby="title">
+  <title id="title">Hackathon demo photo placeholder</title><rect width="600" height="500" fill="#c4b5f6"/><rect x="105" y="78" width="390" height="250" rx="10" fill="#f5f3ef"/><rect x="132" y="108" width="150" height="18" rx="9" fill="#7448f5"/><path d="M138 280l65-75 57 40 72-94 105 129z" fill="#c9ff56"/><path d="M260 328v42M195 370h130" stroke="#1d1d26" stroke-width="12" stroke-linecap="round"/><circle cx="440" cy="408" r="42" fill="#1d1d26"/><path d="M420 408h40M440 388v40" stroke="#c9ff56" stroke-width="9"/>
+  <text x="32" y="462" fill="#1d1d26" font-family="monospace" font-size="16" letter-spacing="4">PROJECT DEMO · PLACEHOLDER</text>
+</svg>

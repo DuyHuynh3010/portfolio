@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title">
+  <title id="title">Model building placeholder</title><rect width="720" height="480" fill="#d8f39d"/>
+  <g fill="none" stroke="#1d1d26" stroke-width="12" stroke-linejoin="round"><path d="M220 332l140-80 140 80-140 80z"/><path d="M220 332V188l140-80 140 80v144M360 252V108M220 188l140 80 140-80"/></g>
+  <g fill="#7448f5"><circle cx="120" cy="115" r="18"/><rect x="555" y="90" width="55" height="55" rx="8"/><path d="M92 350l36-62 36 62z"/></g><text x="42" y="440" fill="#1d1d26" font-family="monospace" font-size="18" letter-spacing="4">PHOTO PLACEHOLDER</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 440" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait placeholder</title><desc id="desc">Abstract person silhouette on a purple background</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c9ff56"/><stop offset="1" stop-color="#7448f5"/></linearGradient></defs>
+  <rect width="360" height="440" fill="url(#bg)"/><circle cx="180" cy="154" r="72" fill="#f5f3ef" opacity=".94"/>
+  <path d="M68 440c10-106 52-164 112-164s102 58 112 164" fill="#1d1d26"/><path d="M22 32h70M268 408h70" stroke="#fff" stroke-width="3" opacity=".5"/><circle cx="310" cy="65" r="24" fill="none" stroke="#fff" opacity=".5"/>
+</svg>

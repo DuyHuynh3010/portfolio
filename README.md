@@ -1,14 +1,18 @@
-# Portfolio cá nhân
+# Nguyen Duy Huynh — Personal Portfolio
 
-Portfolio một trang dành cho developer, được viết bằng HTML, CSS và JavaScript thuần.
+A responsive, single-page developer portfolio built with plain HTML, CSS, and JavaScript.
 
-## Chạy dự án
+## Run locally
 
-Mở `index.html` trực tiếp trong trình duyệt, hoặc dùng extension Live Server trong VS Code.
+Open `index.html` in a browser or launch it with the Live Server extension in VS Code.
 
-## Cá nhân hóa
+## Replace the placeholder content
 
-- Đổi tên, phần giới thiệu và thông tin dự án trong `index.html`.
-- Thay `hello@example.com` bằng email thật.
-- Thay các liên kết `#` ở cuối trang bằng GitHub, LinkedIn và Facebook của bạn.
-- Chỉnh màu chính ở các biến đầu file `styles.css`.
+- Update the two school entries and dates in the `education` section of `index.html`.
+- Update the credential cards and their links in the `certifications` section.
+- Place certificate PDFs in `assets/certificates/` or replace the certificate links with public PDF URLs.
+- Replace the three GreenAIr contest placeholders in `assets/contest/` with your hackathon photos.
+- Project website screenshots are stored in `assets/projects/`.
+- Replace `assets/profile-placeholder.svg` with a portrait using the same filename, or update the image path in `index.html`.
+- Replace the three hobby images inside `assets/` with personal photos.
+- Adjust project descriptions, skills, and social links to match your real experience.
