@@ -2,6 +2,10 @@
 
 A responsive, single-page developer portfolio built with plain HTML, CSS, and JavaScript.
 
+## Live website
+
+[View the portfolio on GitHub Pages](https://duyhuynh3010.github.io/portfolio/)
+
 ## Run locally
 
 Open `index.html` in a browser or launch it with the Live Server extension in VS Code.
