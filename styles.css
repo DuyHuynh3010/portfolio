@@ -119,11 +119,13 @@ h1 .accent { color: var(--purple); }
 .contest-meta span { padding: 17px 8px 17px 0; color: #9d9da8; font-size: 8px; line-height: 1.4; }
 .contest-meta b { display: block; margin-bottom: 5px; color: white; font: 500 15px "DM Mono", monospace; }
 .contest-tech { margin-top: auto; }
-.contest-gallery { padding: 18px; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1.35fr .65fr; gap: 12px; background: #30303a; }
+.contest-gallery { padding: 18px; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 1.3fr .7fr; gap: 12px; background: #30303a; }
 .contest-photo { min-width: 0; min-height: 0; margin: 0; position: relative; overflow: hidden; border-radius: 7px; }
 .contest-photo-main { grid-column: 1 / -1; }.contest-photo img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .55s; }
 .contest-photo:hover img { transform: scale(1.035); }
 .contest-photo figcaption { position: absolute; left: 11px; bottom: 11px; padding: 6px 8px; color: white; background: rgba(22,22,29,.82); border-radius: 3px; font: 500 7px "DM Mono", monospace; letter-spacing: .6px; }
+.contest-certificate > a { display: block; width: 100%; height: 100%; background: #ece8df; }
+.contest-certificate img { object-fit: contain; }
 
 .projects { background: var(--ink); color: white; max-width: none; padding-left: max(28px, calc((100vw - 1164px)/2)); padding-right: max(28px, calc((100vw - 1164px)/2)); }
 .projects .section-number { color: var(--lime); }.projects .section-heading h2 span { color: #9999a4; }
@@ -247,6 +249,17 @@ footer p { color: var(--muted); text-align: center; } footer p span { color: var
 .hobby-image img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .6s cubic-bezier(.2,.7,.2,1); }
 .hobby-image > span { position: absolute; left: 14px; bottom: 14px; padding: 6px 8px; color: white; background: rgba(22,22,29,.82); border-radius: 3px; font: 500 7px "DM Mono", monospace; letter-spacing: 1px; }
 .hobby-card:hover .hobby-image img { transform: scale(1.045); }
+.hobby-image-collage .hobby-primary-photo { object-position: 46% center; }
+.hobby-inset { position: absolute; z-index: 2; top: 17px; right: 17px; width: 28%; aspect-ratio: 1; padding: 5px; overflow: hidden; background: var(--white); border-radius: 5px; box-shadow: 0 14px 30px rgba(22,22,29,.28); transform: rotate(3deg); transition: transform .35s ease; }
+.hobby-inset img { border-radius: 2px; }
+.hobby-card:hover .hobby-inset { transform: rotate(0deg) translateY(-3px); }
+.hobby-card:hover .hobby-inset img { transform: scale(1.035); }
+.gundam-gallery { display: grid; grid-template-columns: 1.55fr .85fr; grid-template-rows: 1fr 1fr; gap: 6px; padding: 6px; background: var(--ink); }
+.gundam-gallery > img { min-width: 0; min-height: 0; object-fit: cover; }
+.gundam-gallery .gundam-main { grid-row: 1 / -1; object-position: center; }
+.gundam-gallery .gundam-detail,
+.gundam-gallery .gundam-workbench { object-position: center; }
+.gundam-gallery > span { z-index: 3; }
 .hobby-copy { max-width: 560px; }
 .hobby-copy > span { color: var(--purple); font: 500 10px "DM Mono", monospace; letter-spacing: 1.4px; }
 .hobby-copy h3 { margin: 18px 0 18px; font-size: clamp(38px, 5vw, 64px); line-height: 1; letter-spacing: -3px; }
@@ -257,6 +270,9 @@ footer p { color: var(--muted); text-align: center; } footer p span { color: var
 .contact-details > span { min-width: 100%; font: 500 11px "DM Mono", monospace; letter-spacing: 1px; text-transform: uppercase; color: #d5caff; }
 .contact-details .button { margin-top: 0; text-transform: none; }
 .contact-details b { color: var(--purple); font-size: 14px; }
+.footer-socials a { display: inline-flex; align-items: center; gap: 6px; color: var(--ink); transition: color .2s, transform .2s; }
+.footer-socials svg { width: 15px; height: 15px; fill: currentColor; }
+.footer-socials a:hover { color: var(--purple); transform: translateY(-2px); }
 
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
@@ -282,7 +298,7 @@ footer p { color: var(--muted); text-align: center; } footer p span { color: var
   .section { padding: 85px 22px; }.section-heading { margin-bottom: 45px; }.section-heading h2 { letter-spacing: -2px; }
   .stats { grid-template-columns: 1fr; }.stats article { display: flex; align-items: center; gap: 24px; padding: 15px 20px; }
   .timeline::before { left: 20px; }.timeline-item { grid-template-columns: 42px 1fr; gap: 18px; padding-bottom: 54px; }.timeline-marker { width: 41px; height: 41px; }.timeline-date { grid-column: 2; grid-row: 1; padding-top: 13px; }.timeline-content { grid-column: 2; }.timeline-content h3 { font-size: 23px; }
-  .contest-story { min-height: 0; padding: 34px 25px 40px; }.contest-kicker { margin-top: 48px; }.contest-story h3 { letter-spacing: -3px; }.contest-meta { grid-template-columns: 1fr; }.contest-meta span { border-bottom: 1px solid #3e3e49; }.contest-meta span:last-child { border: 0; }.contest-gallery { min-height: 430px; padding: 9px; gap: 7px; }.contest-photo figcaption { font-size: 6px; }
+  .contest-story { min-height: 0; padding: 34px 25px 40px; }.contest-kicker { margin-top: 48px; }.contest-story h3 { letter-spacing: -3px; }.contest-meta { grid-template-columns: 1fr; }.contest-meta span { border-bottom: 1px solid #3e3e49; }.contest-meta span:last-child { border: 0; }.contest-gallery { min-height: 650px; padding: 9px; gap: 7px; grid-template-columns: 1fr 1fr; grid-template-rows: 1.1fr .7fr .9fr; }.contest-certificate { grid-column: 1 / -1; }.contest-photo figcaption { font-size: 6px; }
   .project-grid { grid-template-columns: 1fr; }.project-large { grid-column: auto; }.project-preview, .project-large .project-preview { min-height: 320px; }.mock-browser { width: 90%; }
   .website-preview { padding: 25px 12px 0; }.website-window { height: 295px; }
   .certificate-grid { grid-template-columns: 1fr; }.certificate-add { grid-column: auto; }.certificate-card { min-height: 270px; }
