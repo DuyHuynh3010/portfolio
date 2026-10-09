@@ -170,6 +170,23 @@ h1 .accent { color: var(--purple); }
 .project-actions a { display: inline-flex; align-items: center; gap: 14px; padding: 9px 11px; border: 1px solid #4b4b56; border-radius: 5px; color: white; font-size: 10px; font-weight: 700; transition: color .2s, border-color .2s, background .2s; }
 .project-actions a:hover { color: var(--ink); border-color: var(--lime); background: var(--lime); }.project-actions b { color: var(--lime); }.project-actions a:hover b { color: var(--purple); }
 
+.resume { border-bottom: 1px solid var(--line); }
+.resume-card { min-height: 430px; display: grid; grid-template-columns: 1.05fr .95fr; overflow: hidden; color: white; background: var(--purple); border-radius: 14px; box-shadow: 0 28px 65px rgba(85,55,190,.18); }
+.resume-copy { padding: clamp(38px, 6vw, 72px); display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
+.resume-copy > p { margin: 0 0 18px; color: var(--lime); font: 500 9px "DM Mono", monospace; letter-spacing: 1.4px; }
+.resume-copy h3 { max-width: 520px; margin: 0 0 18px; font-size: clamp(36px, 4.2vw, 58px); line-height: 1.05; letter-spacing: -3px; }
+.resume-copy > span { max-width: 510px; color: #d5caff; font-size: 14px; line-height: 1.8; }
+.resume-actions { margin-top: 34px; display: flex; align-items: center; flex-wrap: wrap; gap: 22px; }
+.resume-actions .button-primary { background: var(--lime); color: var(--ink); }.resume-actions .button-primary b { color: var(--purple); }
+.resume-download { padding: 10px 0; color: white; font-size: 12px; font-weight: 700; border-bottom: 1px solid rgba(255,255,255,.4); }.resume-download b { margin-left: 10px; color: var(--lime); }.resume-download:hover { color: var(--lime); }
+.resume-visual { display: grid; place-items: center; padding: 42px; background: linear-gradient(145deg, #dff69c, #b9dc6e); }
+.resume-paper { width: min(310px, 82%); aspect-ratio: .72; padding: 34px 30px; display: flex; flex-direction: column; color: var(--ink); background: white; border-radius: 4px; box-shadow: 0 26px 55px rgba(28,35,20,.25); transform: rotate(4deg); transition: transform .35s; }
+.resume-card:hover .resume-paper { transform: rotate(1deg) translateY(-5px); }
+.resume-paper span { align-self: flex-end; padding: 6px 8px; color: white; background: var(--purple); border-radius: 3px; font: 500 9px "DM Mono", monospace; }
+.resume-paper strong { margin-top: 42px; font-size: clamp(26px, 3vw, 39px); line-height: .98; letter-spacing: -2px; }
+.resume-paper small { margin: 12px 0 38px; color: var(--purple); font: 500 8px "DM Mono", monospace; letter-spacing: 1.5px; }
+.resume-paper i { height: 5px; margin-bottom: 13px; display: block; background: #e7e7eb; border-radius: 4px; }.resume-paper i:nth-of-type(2), .resume-paper i:nth-of-type(5) { width: 72%; }
+
 .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); }
 .skills-grid article { padding: 35px 28px; border-right: 1px solid var(--line); }.skills-grid article:last-child { border: 0; }
 .skills-grid span { color: var(--purple); font: 10px "DM Mono", monospace; }.skills-grid h3 { font-size: 24px; margin: 45px 0 13px; }.skills-grid p { color: var(--muted); font-size: 13px; line-height: 1.8; }
@@ -280,11 +297,13 @@ footer p { color: var(--muted); text-align: center; } footer p span { color: var
 @keyframes float { 50% { transform: translateY(-12px) rotate(6deg); } }
 
 @media (max-width: 900px) {
+  .site-nav { gap: 12px; font-size: 11px; }.nav-cta { padding: 10px 13px; }
   .hero { grid-template-columns: 1fr; padding-top: 50px; }.hero-visual { margin-top: 40px; }.scroll-hint { display: none; }
   .section-heading { grid-template-columns: 1fr; gap: 15px; }.about-grid { margin-left: 0; grid-template-columns: 1fr; gap: 50px; }
   .contact-copy { margin-left: 0; }.project-grid { gap: 20px; }
   .timeline { margin-left: 0; }.certificate-grid { grid-template-columns: 1fr 1fr; }.certificate-add { grid-column: 1 / -1; min-height: 240px; }
   .contest-feature { grid-template-columns: 1fr; }.contest-story { min-height: 560px; }.contest-gallery { min-height: 520px; }
+  .resume-card { grid-template-columns: 1fr; }.resume-visual { min-height: 420px; }
   .hobby-card { min-height: 330px; grid-template-columns: minmax(230px, .9fr) 1.1fr; gap: 45px; }.hobby-card:nth-child(even) { grid-template-columns: 1.1fr minmax(230px, .9fr); }.hobby-card:nth-child(even) .hobby-copy { padding-left: 0; }
 }
 @media (max-width: 650px) {
@@ -302,6 +321,7 @@ footer p { color: var(--muted); text-align: center; } footer p span { color: var
   .project-grid { grid-template-columns: 1fr; }.project-large { grid-column: auto; }.project-preview, .project-large .project-preview { min-height: 320px; }.mock-browser { width: 90%; }
   .website-preview { padding: 25px 12px 0; }.website-window { height: 295px; }
   .certificate-grid { grid-template-columns: 1fr; }.certificate-add { grid-column: auto; }.certificate-card { min-height: 270px; }
+  .resume-copy { padding: 38px 25px 44px; }.resume-copy h3 { letter-spacing: -2px; }.resume-visual { min-height: 360px; padding: 32px 20px; }.resume-paper { width: min(270px, 80%); }
   .hobby-card, .hobby-card:nth-child(even) { min-height: 0; padding: 38px 0 46px; grid-template-columns: 1fr; gap: 28px; }.hobby-card:nth-child(even) .hobby-copy { order: initial; }.hobby-image { width: 100%; }.hobby-copy h3 { font-size: 40px; letter-spacing: -2px; }.hobby-copy small { margin-top: 22px; }
   .skills-grid { grid-template-columns: 1fr; }.skills-grid article { border-right: 0; border-bottom: 1px solid var(--line); }.skills-grid h3 { margin-top: 20px; }
   .contact { min-height: 570px; padding: 75px 22px; }.contact-copy { margin-top: 75px; }.contact h2 { letter-spacing: -2.5px; }.contact-details .button { padding: 14px; gap: 10px; font-size: 10px; word-break: break-all; }

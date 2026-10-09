@@ -17,6 +17,7 @@ Open `index.html` in a browser or launch it with the Live Server extension in VS
 - Place certificate PDFs in `assets/certificates/` or replace the certificate links with public PDF URLs.
 - GreenAIr team, presentation, award ceremony, and award certificate photos are stored in `assets/contest/`.
 - Project website screenshots are stored in `assets/projects/`.
+- The downloadable technical resume is stored in `assets/resume/`.
 - Replace `assets/profile-placeholder.svg` with a portrait using the same filename, or update the image path in `index.html`.
 - Kyudo and Gundam photos are stored in `assets/hobbies/`.
 - Adjust project descriptions, skills, and social links to match your real experience.
